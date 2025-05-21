@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import TextOnBackgroundVue from '@/home/components/TextOnBackground.vue';
+import ChessCarousel from '@/home/components/ChessCarousel.vue';
 
 </script>
 
@@ -20,7 +21,9 @@ import TextOnBackgroundVue from '@/home/components/TextOnBackground.vue';
       />
     </div>
     <div class="bento__five"></div>
-    <div class="bento__six"></div>
+    <div class="bento__six">
+      <ChessCarousel />
+    </div>
   </div>
 </template>
 
