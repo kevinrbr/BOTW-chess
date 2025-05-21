@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import king from '@/common/assets/king.png'
+import queen from '@/common/assets/queen.png'
+import rook from '@/common/assets/rook.png'
+import bishop from '@/common/assets/bishop.png'
+import knight from '@/common/assets/knight.png'
+import pawn from '@/common/assets/pawn.png'
+import bg from '@/common/assets/carousel-bg.png'
 
 const currentIndex = ref(0)
 
@@ -7,32 +14,32 @@ const slides = [
   {
     title: 'THE KING',
     text: 'The king is the most important piece. It moves one square in any direction. The goal is to protect your king and avoid checkmate. The king can also castle with a rook to stay safe.',
-    image: '/src/common/assets/king.png',
+    image: king,
   },
   {
     title: 'THE QUEEN',
     text: 'The queen is the strongest piece. It can move any number of squares in all directions—straight or diagonal—making it very powerful for attack and defense.',
-    image: '/src/common/assets/queen.png',
+    image: queen,
   },
   {
     title: 'THE ROOK',
     text: 'The rook moves any number of squares horizontally or vertically. It controls entire rows and columns and is important for castling with the king.',
-    image: '/src/common/assets/rook.png',
+    image: rook,
   },
   {
     title: 'THE BISHOP',
     text: 'The bishop moves diagonally any number of squares. Each bishop stays on the same color square throughout the game, controlling key diagonal lines.',
-    image: '/src/common/assets/bishop.png',
+    image: bishop,
   },
   {
     title: 'THE KNIGHT',
     text: 'The knight moves in an "L" shape: two squares in one direction and then one square sideways. It’s the only piece that can jump over others.',
-    image: '/src/common/assets/knight.png',
+    image: knight,
   },
   {
     title: 'THE PAWN',
     text: 'Pawns move forward one square, but two squares on their first move. They capture diagonally. When a pawn reaches the other side, it can be promoted to any other piece, usually a queen.',
-    image: '/src/common/assets/pawn.png',
+    image: pawn,
   },
 ]
 
@@ -58,7 +65,7 @@ const trackStyle = computed(() => ({
 
 <template>
     <div class="carousel">
-      <img src="@/common/assets/carousel-bg.png" class="carousel__background" />
+      <img :src="bg" class="carousel__background" />
   
       <button class="carousel__arrow left" @click="prevSlide">‹</button>
   

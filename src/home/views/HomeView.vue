@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import TextOnBackgroundVue from '@/home/components/TextOnBackground.vue';
 import ChessCarousel from '@/home/components/ChessCarousel.vue';
+import chess1 from '@/common/assets/chess1.png';
+import chess2 from '@/common/assets/chess2.png';
 
 </script>
 
@@ -11,13 +13,13 @@ import ChessCarousel from '@/home/components/ChessCarousel.vue';
     <div class="bento__three">
      <TextOnBackgroundVue 
         text="Alapine More Than a Club A True Passion for Chess"
-        image="src/common/assets/chess1.png"  
+        :image="chess1"  
      />
     </div>
     <div class="bento__four">
       <TextOnBackgroundVue 
         text="Step into the World of Alapine Chess Club"
-        image="src/common/assets/chess2.png"  
+        :image="chess2"  
       />
     </div>
     <div class="bento__five"></div>
